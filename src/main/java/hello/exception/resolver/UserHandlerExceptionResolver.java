@@ -36,7 +36,7 @@ public class UserHandlerExceptionResolver implements HandlerExceptionResolver {
                     response.getWriter().write(result);
                     return new ModelAndView();
                 } else {
-                    return new ModelAndView("error/400");
+                    return new ModelAndView("error/500");
                 }
             }
         }catch(IOException e) {
